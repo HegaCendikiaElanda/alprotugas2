@@ -29,19 +29,33 @@ void buatArsip(){
 		printf("Nama : "); scanf("%s",&produk.nama);
 		printf("Harga : "); scanf("%d",&produk.harga);
 		fprintf(newFile,"%s %s %d\n",produk.kode, produk.nama, produk.harga);
-		printf("Input lagi(y/n) : "); scanf("%c",&lagi);
+		printf("Input lagi(y/n) : "); fflush(stdin); scanf("%c",&lagi);
 	}while(lagi=='y');
 	fprintf(newFile,"XXX XXX XXX");
 	fclose(newFile);
 }
 
 void tampilArsip(){
-	//rian
+	newFile=fopen("Arsip.txt","r");
+	printf("Isi Arsip Produk\n");
+	fscanf(newFile, "%s %s %d\n",&produk.kode, &produk.nama, &produk.harga );
+	if(strcmp(produk.kode, "XXX") == 0){
+		printf("arsip kosong\n");
+	}else{
+		do{
+			printf("Kode : %s\n",produk.kode);
+			printf("Nama Produk  : %s\n",produk.nama);
+			printf("Harga : %d\n",produk.harga);
+			printf("-----------------------\n");
+			fscanf(newFile, "%s %s %d\n", &produk.kode, &produk.nama, &produk.harga);
+		}while(strcmp(produk.kode, "XXX") != 0);
+	}   
+	fclose(newFile);
 }
 
 int hitungTotalProduk(){
 	int totalHarga = 0;
-	// randi
+	// randy
 	return totalHarga;
 }
 
@@ -67,7 +81,7 @@ main(){
 			case 4 :
 				rt = hitungRataProduk();
 				printf("Rata-rata produk : %d",rt);
-				break
+				break;
 			case 5: printf("Aplikasi keluar....."); break;
 			default : printf("Input tidak valid !!\n");
 		}
