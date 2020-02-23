@@ -6,3 +6,11 @@ I'm not very good at it yet. And this all is still basic. Please forgive me, if 
 ## Contents :<br>
 1. Tugas 1 : File<br>
 2. Tugas 2 : Arsip
+<br><br><br>
+### Please
+Please try more to work independently.
+Do not cheat when doing a task.
+Working together and cheating is different, buddy.
+Please be confident in your own work. Do not give up easily.
+You have to understand what you are doing.
+You must be able to take responsibility for what you do.
