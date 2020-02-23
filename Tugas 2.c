@@ -40,21 +40,24 @@ void buatArsip(){
 	char lagi;
 	newFile = fopen("Arsip.txt","w");
 	do{
+		system("cls");
 		printf("Masukkan data berikut\n");
 		printf("Kode : "); scanf("%s",&produk.kode);
 		printf("Nama : "); scanf("%s",&produk.nama);
 		printf("Harga : "); scanf("%d",&produk.harga);
 		fprintf(newFile,"%s %s %d\n",produk.kode, produk.nama, produk.harga);
-		printf("Input lagi(y/n) : "); fflush(stdin); scanf("%c",&lagi);
+		printf("\nInput lagi(y/n) : "); fflush(stdin); scanf("%c",&lagi);
 	}while(lagi=='y');
 	fprintf(newFile,"XXX XXX XXX");
 	fclose(newFile);
 }
 
 void tampilArsip(){
+	system("cls");
 	if(cekFile()==1){
 		newFile=fopen("Arsip.txt","r");
 		printf("Isi Arsip Produk\n");
+		printf("-----------------------\n");
 		fscanf(newFile, "%s %s %d\n",&produk.kode, &produk.nama, &produk.harga );
 		if(strcmp(produk.kode, "XXX") == 0){
 			printf("Arsip Kosong\n");
@@ -74,7 +77,17 @@ void tampilArsip(){
 }
 
 int hitungTotalProduk(){
-	// Randy
+	int total = 0;
+	if(cekFile()==1){
+		newFile=fopen("Arsip.txt","r");
+		fscanf(newFile, "%s %s %d\n",&produk.kode, &produk.nama, &produk.harga );
+		do{
+			total=total+produk.harga;	
+			fscanf(newFile, "%s %s %d\n",&produk.kode, &produk.nama, &produk.harga );
+		}while(strcmp(produk.kode, "XXX") != 0);
+		fclose(newFile);
+	}
+	return total;
 }
 
 float hitungRataProduk(){
