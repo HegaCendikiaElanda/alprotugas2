@@ -6,9 +6,10 @@ I'm not very good at it yet. And this all is still basic. Please forgive me, if 
 ## Contents :<br>
 1. Tugas 1 : File<br>
 2. Tugas 2 : Arsip<br>
-3. Tugas 2a : Arsip (With Update Function)<br>
-4. Merging : Merging 2 Files to 1 File (With "XXX" as mark)
-<br><br><br>
+3. Tugas 2a : Arsip (With update function)<br>
+4. Merging : Merge 2 files to 1 file (With "XXX" as mark)<br>
+5. Splitting : Split 1 file to 2 file (With passing score condition)<br>
+<br><br>
 ### Please
 Please try more to work independently.
 Do not cheat when doing a task.
