@@ -6,7 +6,7 @@ I'm not very good at it yet. And this all is still basic. Please forgive me, if 
 ## Contents :<br>
 1. Tugas 1 : File<br>
 2. Tugas 2 : Arsip<br>
-3. Tugas 2a : Arsib (With Update Function)
+3. Tugas 2a : Arsip (With Update Function)
 <br><br><br>
 ### Please
 Please try more to work independently.
