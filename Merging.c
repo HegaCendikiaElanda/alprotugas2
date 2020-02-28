@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
+#include<string.h>
 typedef struct{
 	char kode[6];
 	char nama[25];
